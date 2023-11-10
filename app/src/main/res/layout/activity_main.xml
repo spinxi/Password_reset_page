@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center_vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:autofillHints="phone"
+        android:inputType="phone"
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Phone" />
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/editTextSms"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="SMS Code"
+        android:maxLength="4"/>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/editTextNewPassword"
+                android:autofillHints="password"
+                android:inputType="textPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="50"
+
+                android:hint="New Password" />
+
+            <EditText
+                android:id="@+id/editTextNewPasswordRepeat"
+                android:autofillHints="password"
+                android:inputType="textPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="50"
+                android:hint="Repeat Password" />
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:text="RESET"
+        app:cornerRadius="0dp" />
+
+
+
+
+
+</LinearLayout>
